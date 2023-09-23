@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .top {
+            display: flex;
+            align-items: center;
+        }
+
+        .melon {
+            width: 500px;
+            height: 100px;
+            background-image: url(./img/melon.PNG);
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .width {
+            width: 500px;
+            border-radius: 50px;
+            height: 30px;
+            border: 2px solid green;
+        }
+
+        .search {
+            width: 200px;
+            height: 100px;
+            background-repeat: no-repeat;
+            background-image: url(./img/search.PNG);
+            background-position: center;
+        }
+
+        .popularsong {
+            margin-right: 10%;
+        }
+
+        span {
+            margin-right: 50px;
+        }
+
+        .title {
+            display: flex;
+        }
+
+        .title>div {
+            margin: 60px;
+        }
+
+        .title>div>div:hover {
+            cursor: pointer;
+        }
+
+        .music {
+            display: flex;
+            margin-bottom: -70px;
+        }
+
+        .number {
+            width: 80px;
+            height: 80px;
+            background-repeat: no-repeat;
+            text-align: center;
+            background-position: center;
+        }
+
+        .gold {
+            background-image: url(./img/1.PNG);
+        }
+
+        .silver {
+            background-image: url(./img/2.PNG);
+        }
+
+        .bronze {
+            background-image: url(./img/3.PNG);
+        }
+
+        .a {
+            background-image: url(./img/세븐.PNG);
+        }
+
+        .b {
+            background-image: url(./img/뉴진스.PNG);
+        }
+
+        .c {
+            background-image: url(./img/뉴진스.PNG);
+        }
+
+        .d {
+            background-image: url(./img/헤어지자말해요.PNG);
+        }
+
+        .e {
+            background-image: url(./img/퀸카.PNG);
+        }
+
+        .f {
+            background-image: url(./img/아이엠.PNG);
+        }
+
+        .h {
+            background-image: url(./img/No.1.PNG);
+        }
+
+        .i {
+            background-image: url(./img/iceflower.PNG);
+        }
+
+        .j {
+            background-image: url(./img/easy2love.PNG);
+        }
+
+        .k {
+            background-image: url(./img/머리치워머리.PNG);
+        }
+
+        .l {
+            background-image: url(./img/nombti.PNG);
+        }
+
+        .m {
+            background-image: url(./img/neverendingstory.PNG);
+        }
+
+        .g {
+            width: 150px;
+            height: 150px;
+            background-repeat: no-repeat;
+        }
+
+        .g+div:hover {
+            cursor: pointer;
+            text-decoration: underline;
+        }
+
+        .left {
+            display: flex;
+        }
+
+        #topCheckBox:checked~.box>.left>.TOPmusic {
+            display: block;
+        }
+
+        #lateSong:checked~.box>.left>.latestsong {
+            display: block;
+        }
+
+        .TOPmusic {
+            display: none;
+        }
+
+        .latestsong {
+            display: none;
+        }
+
+        label {
+            margin-right: 5%;
+        }
+
+        .right>.container {
+            display: flex;
+            flex-direction: row-reverse;
+            position: fixed;
+            right: 0;
+        }
+
+        .box {
+            display: flex;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="top">
+        <div class="melon"></div>
+        <input class="width" type="text" placeholder="입력하세요" onfocusout="this.value=`${this.value}에 대한 검색결과가 없습니다. `"
+            onfocusin="this.value=``">
+        <div class="search"></div>
+        <div class="popularsong">인기노래</div>
+    </div>
+
+    <input type="checkbox" id="topCheckBox">
+    <label for="topCheckBox">TOP</label>
+
+    <input type="checkbox" id="lateSong">
+    <label for="lateSong">LATESONG</label>
+
+    <div class="box">
+        <div class="left">
+            <div class="TOPmusic">
+                <div class="seven music">
+                    <div class="number gold"></div>
+                    <div class="a g"></div>
+
+                    <a href="https://youtu.be/1QYBiNRu1ok?si=GUIuQzxwMtUsUo9M">
+                        <div>Seven (feat. Latto) - Clean Ver.</div>
+                        <div>정국</div>
+                    </a>
+                </div>
+                <div class="supershy music">
+                    <div class="number silver"></div>
+                    <div class="b g"></div>
+                    <a href="https://youtu.be/ArmDp-zijuc?si=cv_RTZAdLcqxrlWh">
+                        <div>Super Shy</div>
+                        <div>NewJeans</div>
+                    </a>
+                </div>
+                <div class="ETA music">
+                    <div class="number bronze"></div>
+                    <div class="c g"></div>
+                    <a href="https://youtu.be/jOTfBlKSQYY?si=TT8jzJ1fd8A64KMp">
+                        <div>ETA</div>
+                        <div>NewJeans</div>
+                    </a>
+                </div>
+                <div class="헤어지자 말해요 music">
+                    <div class="number">4</div>
+                    <div class="d g p"></div>
+                    <a href="https://youtu.be/yFlxYHjHYAw?si=9hr_QUPvrp0gr2ny">
+                        <div>헤어지자 말해요</div>
+                        <div>박재정</div>
+                    </a>
+                </div>
+                <div class="queencard music">
+                    <div class="number">5</div>
+                    <div class="e g p"></div>
+                    <a href="https://youtu.be/7HDeem-JaSY?si=7_9_2wO0tc4r6uor">
+                        <div>퀸카 (Queencard)</div>
+                        <div>(여자)아이들</div>
+                    </a>
+                </div>
+                <div class="iam music">
+                    <div class="number">6</div>
+                    <div class="f g p"></div>
+                    <a href="https://youtu.be/6ZUIwj3FgUY?si=cuClRwox41pP805K">
+                        <div>I AM</div>
+                        <div>IVE (아이브)</div>
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="latestsong">
+                <div class="seven music">
+                    <div class="number gold"></div>
+                    <div class="h g"></div>
+                    <a href="https://youtu.be/WGOvDWM4Dao?si=b6FQV44mgYNgIi91">
+                        <div>No.1</div>
+                        <div>신세휘</div>
+                    </a>
+                </div>
+                <div class="supershy music">
+                    <div class="number silver"></div>
+                    <div class="i g"></div>
+                    <a href="https://youtu.be/zvK06sJzh5g?si=P937aiickXMlwBpd">
+                        <div>얼음꽃</div>
+                        <div>유나</div>
+                    </a>
+                </div>
+                <div class="ETA music">
+                    <div class="number bronze"></div>
+                    <div class="j g"></div>
+                    <a href="https://youtu.be/MC4mDragZDQ?si=ipgKWCVgh_6NMBBG">
+                        <div>easy 2 love (Feat. Gist)</div>
+                        <div>기원 (Giwon)</div>
+                    </a>
+                </div>
+                <div class="헤어지자 말해요 music">
+                    <div class="number">4</div>
+                    <div class="k g p"></div>
+                    <a href="https://youtu.be/HgJKmkSgkp4?si=D-98oQE4SrdrHKSJ">
+                        <div>머리 치워 머리</div>
+                        <div>이짜나언짜나 (EZUZ)</div>
+                    </a>
+                </div>
+                <div class="queencard music">
+                    <div class="number">5</div>
+                    <div class="l g p"></div>
+                    <a href="https://youtu.be/ABquD7-KecQ?si=fcOGDNf2xQr7GheM">
+                        <div>측정거부</div>
+                        <div>이무진</div>
+                    </a>
+                </div>
+                <div class="iam music">
+                    <div class="number">6</div>
+                    <div class="m g p"></div>
+                    <a href="https://youtu.be/S-uuDaA90Zs?si=xLlwupqbL_B2OUvL">
+                        <div>Never Ending Story</div>
+                        <div>김민석 (멜로망스)</div>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="right">
+            <div class="container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/CJ59m66zHTQ?si=7FBTTctFeMIUsScD"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    </div>
+
+</body>
+
+</html>
